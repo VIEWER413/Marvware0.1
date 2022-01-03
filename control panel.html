@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marvs hub</title>
+</head>
+
+<body>
+    <img src="talking.gif" alt="PLZ DOWNLOAD ALL IMAGE FILES">
+</body>
+
+</html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function validation() {
+            var a = document.form.name.value;
+            if (a == "help") //value
+            {
+                //edit this
+                location.href = "help.html";
+                document.form.name.focus();
+                return false;
+            }
+            var a = document.form.name.value;
+            if (a == "talk-with-me") //value
+            {
+                //edit this
+                location.href = "talking2marv.html";
+                document.form.name.focus();
+                return false;
+            }
+
+        }
+
+        function quest1() {
+            var tt = prompt("The marv asks what languange does the people of japan speek:  ");
+            pp = ["japanese", "Japanese", "JAPANESE"];
+            if (tt == pp) {
+                window.location = "right.html";
+            } else {
+                window.location = "Wrong.html";
+            }
+        }
+
+        function quest2() {
+            var tt = prompt("The marv asks what languange does the people of usa speek:  ");
+            rr = ["english", "English", "ENGLISH"];
+            if (tt == rr) {
+                window.location = "right.html";
+            } else {
+                window.location = "Wrong.html";
+            }
+        }
+        window.setInterval(quest1, 600000);
+        window.setInterval(quest2, 1200000);
+    </script>
+</head>
+
+<body>
+    <form name="form" method="post" onsubmit="return validation()">
+        <tr>
+            <td></td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>enter command here or type help for list of commands: </td>
+            <td><input type="submit" name="sub" value="Submit"></td>
+        </tr>
+    </form>
+</body>
+
+</html>

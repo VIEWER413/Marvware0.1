@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marvware 0.1</title>
+    <h1>Marv-Ware 0.1</h1>
+    <img src="home.gif" alt="PLZ DOWNLOAD ALL IMAGE FILES" width="120">
+</head>
+
+<body>
+
+    <html>
+
+    <head>
+        <script type="text/javascript">
+            function validation() {
+                var a = document.form.name.value;
+                if (a == "start") //value
+                {
+                    //edit this
+                    location.href = "awake.html";
+                    document.form.name.focus();
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="form" method="post" onsubmit="return validation()">
+            <tr>
+                <td>type start to awake the marv:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="sub" value="Submit"></td>
+            </tr>
+        </form>
+    </body>
+
+    </html>
+</body>
+
+</html>
